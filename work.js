@@ -1,5 +1,5 @@
 // the string to search for
-const searchString = 'me'
+const searchString = 'kfb'
 
 const uriSafe = encodeURIComponent(searchString)
 
@@ -37,7 +37,8 @@ for (;;) {
       break
     }
   } else if (candidate !== 0) {
-    if (candidate === (decArray.length - 1)) console.log('Close 😔')
+    if (candidate === (decArray.length - 2)) console.log('Close 😔')
+    if (candidate === (decArray.length - 1)) console.log('Very close 😔')
     candidate = 0
   }
 }
